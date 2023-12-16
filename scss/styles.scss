@@ -42,7 +42,7 @@ button:hover {
       color: #545454;
       font-size: 22px;
       font-weight: 600;
-      transition: color 0.5s linear;
+      transition: color 0.1s linear;
     }
     a:hover {
       color: $dark_color;
@@ -471,7 +471,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 92px;
+  padding-left: 5vw;
   padding-right: 10px;
   position: absolute;
   margin: 0 auto;
@@ -489,7 +489,7 @@ footer {
     font-size: 24px;
     font-weight: $font_semibold;
     border-radius: 4px;
-    padding: 2.5vh 2vh;
+    padding: 1.2vw 1.3vw;
   }
 }
 
@@ -663,8 +663,36 @@ footer {
     right: 0;
     justify-content: center;
   }
+  .envelope {
+    display: none;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  footer {
+    padding-bottom: 40px;
+  }
+  .footer_item:nth-child(1) {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    order: 10;
+    margin-top: 60px;
+    p {
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+  }
+  .footer_item:nth-child(4) {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer_inner {
+    flex-wrap: wrap;
+    padding: 70px 0px 0px 0px;
+  }
+}
+@media (max-width: 550px) {
   .header_inner {
     flex-wrap: wrap;
     row-gap: 20px;
@@ -786,6 +814,9 @@ footer {
   .steps_section {
     margin-top: 100px;
   }
+  .reviews_inner {
+    margin-top: 150px;
+  }
   .prescr_for_rev {
     text-align: center;
   }
@@ -844,28 +875,5 @@ footer {
     div {
       display: none;
     }
-  }
-  footer {
-    padding-bottom: 40px;
-  }
-  .footer_item:nth-child(1) {
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    order: 10;
-    margin-top: 60px;
-    p {
-      margin-top: 15px;
-      margin-bottom: 30px;
-    }
-  }
-  .footer_item:nth-child(4) {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .footer_inner {
-    flex-wrap: wrap;
-    padding: 70px 0px 0px 0px;
   }
 }
