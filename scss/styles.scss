@@ -17,6 +17,17 @@ button {
   button:hover {
     transform: scale(1.02, 1.02);
   }
+  a:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    animation-name: underline;
+    animation-duration: 0.5s;
+    height: 2px;
+    background-color: black;
+  }
 }
 
 .container {
@@ -40,6 +51,7 @@ button {
     align-items: center;
     column-gap: 60px;
     order: 5;
+    row-gap: 20px;
     li {
       position: relative;
     }
